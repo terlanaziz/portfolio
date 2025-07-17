@@ -7,10 +7,7 @@ const Contact = () => {
           Have a project in mind, want to collaborate, or just want to say hi? Fill out the form below or reach me on GitHub or LinkedIn.
         </p>
 
-        <form
-
-          className="space-y-6"
-        >
+        <form className="space-y-6">
           <input
             type="text"
             name="name"
@@ -30,13 +27,12 @@ const Contact = () => {
             placeholder="Your Message"
             rows="5"
             required
-            className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          ></textarea>
+            className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </textarea>
           <button
             type="submit"
-            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition md:hover:scale-105"
-          >
-            Send Message
+            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition md:hover:scale-105">
+              Send Message
           </button>
         </form>
       </div>

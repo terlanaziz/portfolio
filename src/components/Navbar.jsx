@@ -18,7 +18,6 @@ const Navbar = ({ activeLink }) => {
 
   return (
     <>
-      {/* Blur Overlay outside header */}
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/40 backdrop-blur-md z-40 transition-opacity duration-300 md:hidden"
@@ -32,7 +31,7 @@ const Navbar = ({ activeLink }) => {
             TerlanDev
           </a>
 
-          {/* Desktop Menu */}
+
           <ul className="hidden md:flex space-x-8 text-white text-base font-medium">
             {["#home", "#projects", "#about", "#contact"].map((link) => (
               <li key={link}>
@@ -40,28 +39,25 @@ const Navbar = ({ activeLink }) => {
                   href={link}
                   className={`pb-1 border-b-2 transition duration-300 ${
                     activeLink === link ? "border-blue-500" : "border-transparent"
-                  }`}
-                >
+                  }`}>
                   {link.replace("#", "").toUpperCase()}
                 </a>
               </li>
             ))}
           </ul>
 
-          {/* Hamburger Icon */}
+
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
-              aria-expanded={menuOpen}
-            >
+              aria-expanded={menuOpen}>
               <svg
                 className="w-6 h-6 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 {menuOpen ? (
                   <path
                     strokeLinecap="round"
@@ -82,20 +78,18 @@ const Navbar = ({ activeLink }) => {
           </div>
         </nav>
 
-        {/* Mobile Menu */}
+
         <div
           className={`md:hidden fixed top-16 left-0 right-0 bg-slate-900 text-white z-50 flex flex-col items-center text-center space-y-4 py-6 transition-transform duration-300 ease-in-out 
             ${menuOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
-          }`}
-        >
+          }`}>
           {["#home", "#projects", "#about", "#contact"].map((link) => (
             <a
               key={link}
               href={link}
               onClick={() => setMenuOpen(false)}
-              className="text-base font-medium hover:text-blue-400 transition"
-            >
-              {link.replace("#", "").toUpperCase()}
+              className="text-base font-medium hover:text-blue-400 transition">
+                {link.replace("#", "").toUpperCase()}
             </a>
           ))}
         </div>

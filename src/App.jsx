@@ -28,7 +28,7 @@ function App() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // bir dəfə də page load-da işləsin
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

@@ -3,40 +3,40 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projectList = [
     {
-      title: "Todo App",
-      description: "Simple todo app built with React and Tailwind.",
-      tech: "React, Tailwind",
-      link: "https://github.com/terlanaziz/todo-app",
-    },
-    {
       title: "Portfolio Website",
       description: "This portfolio you're looking at right now!",
       tech: "React, Tailwind",
       link: "https://github.com/terlanaziz/portfolio",
     },
     {
-      title: "Loading",
-      description: "Loading",
-      tech: "React, Tailwind",
-      link: "https://github.com/terlanaziz/portfolio",
-    },
-    {
       title: "Todo App",
-      description: "Simple todo app built with React and Tailwind.",
-      tech: "React, Tailwind",
-      link: "https://github.com/terlanaziz/todo-app",
-    },
-    {
-      title: "Portfolio Website",
-      description: "This portfolio you're looking at right now!",
-      tech: "React, Tailwind",
-      link: "https://github.com/terlanaziz/portfolio",
+      description: "Loading",
+      tech: "Loading",
+      link: "https://github.com/terlanaziz",
     },
     {
       title: "Loading",
       description: "Loading",
-      tech: "React, Tailwind",
-      link: "https://github.com/terlanaziz/portfolio",
+      tech: "Loading",
+      link: "https://github.com/terlanaziz",
+    },
+    {
+      title: "Loading",
+      description: "Loading",
+      tech: "Loading",
+      link: "https://github.com/terlanaziz",
+    },
+    {
+      title: "Loading",
+      description: "Loading",
+      tech: "Loading",
+      link: "https://github.com/terlanaziz",
+    },
+    {
+      title: "Loading",
+      description: "Loading",
+      tech: "Loading",
+      link: "https://github.com/terlanaziz",
     },
 
   ];
